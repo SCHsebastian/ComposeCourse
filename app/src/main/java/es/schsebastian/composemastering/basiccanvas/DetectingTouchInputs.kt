@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Button
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -54,7 +55,7 @@ fun DetectingTouchInputs() {
                 text = "Points: $points",
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.Green,
+                style = MaterialTheme.typography.headlineMedium,
                 modifier = Modifier.weight(1f).align(Alignment.CenterVertically)
             )
             Button(
@@ -110,6 +111,7 @@ fun CountdownTimer(
             text = (curTime / 1000).toString(),
             fontSize = 20.sp,
             fontWeight = FontWeight.Bold,
+            style = MaterialTheme.typography.headlineMedium,
             modifier = Modifier.align(Alignment.CenterEnd),
             color = Color.Red
         )
